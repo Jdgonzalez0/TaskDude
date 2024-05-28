@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>TaskDude</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">TaskDude</a>
+            </div>  
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="about.html">Acerca de</a></li>
+                    <li><a href="product.html">Productos</a></li>
+                    <li><a href="provider.html">Proveedores</a></li>
+                    <li><a href="client.html">Clientes</a></li>
+                    <li><a href="contact.html">¿Quienes Somos?</a></li>
+                </ul>
+            </div>
+        </div>
+  </nav>
+
+    <section class="homeAbout">
+    </section>
+    <div style="height: 1000px">
+            <h2 class="myH2">Nuestra Misión</h2>
+			<p class="myP">Proveer a nuestros clientes con una amplia gama de relojes de alta calidad, garantizando un servicio de distribución eficiente y confiable. Nos enfocamos en construir relaciones duraderas con nuestros socios y clientes, ofreciendo productos que combinan precisión, durabilidad y estilo, para satisfacer las diversas necesidades y preferencias del mercado.</p>
+            <h2 class="myH2">Nuestra Visión</h2>
+            <p class="myP">Convertirnos en el distribuidor líder de relojes a nivel mundial, reconocido por nuestra excelencia en el servicio y nuestra capacidad para ofrecer las mejores marcas y modelos del mercado. Aspiramos a expandir nuestra red de distribución y fortalecer nuestra presencia global, asegurando que nuestros clientes reciban los productos más innovadores y de alta calidad, respaldados por un servicio excepcional.</p>
+        </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+</body>
+</html>

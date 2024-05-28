@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>TaskDude</title>
+</head>
+  <body>
+    <nav class="nav">
+          <div class="container">
+              <div class="logo">
+                  <a href="index.html">TaskDude</a>
+              </div>  
+              <div id="mainListDiv" class="main_list">
+                  <ul class="navlinks">
+                      <li><a href="about.html">Acerca de</a></li>
+                      <li><a href="product.html">Productos</a></li>
+                      <li><a href="provider.html">Proveedores</a></li>
+                      <li><a href="client.html">Clientes</a></li>
+                      <li><a href="contact.html">¿Quienes Somos?</a></li>
+                  </ul>
+              </div>
+          </div>
+    </nav>
+
+      <section class="home">
+      </section>
+      <div style="height: 1000px">
+
+        <h2 class="myH2"></h2>
+        <p class="myP">En TaskDude nos apasionan los relojes y sabemos que tú también compartes esa pasión. Nos dedicamos a ofrecerte una amplia selección de relojes de alta calidad, diseñados para cada estilo y ocasión. Desde elegantes relojes de pulsera para eventos formales hasta robustos modelos deportivos para tus aventuras al aire libre, en TimeElegance encontrarás el reloj perfecto que se adapte a tu personalidad y estilo de vida.</p>
+        <p class="myP"></p>
+        <h2 class="myH2">Nuestra Colección</h2>
+        <p class="myP">Explora nuestra variada colección de relojes que incluye marcas reconocidas mundialmente y modelos exclusivos. Cada pieza ha sido cuidadosamente seleccionada por su diseño innovador, precisión y durabilidad. Nuestro catálogo incluye relojes de:</p>
+        <ul>
+          <li><p class="myP">Lujo: Relojes de alta gama que combinan artesanía tradicional y tecnología moderna.</p></li>
+          <li><p class="myP">Deportivos: Diseños resistentes y funcionales, perfectos para cualquier actividad física.</p></li>
+          <li><p class="myP">Clásicos: Elegancia atemporal que complementa cualquier atuendo.</p></li>
+          <li><p class="myP">Smartwatches: Tecnología de punta que se integra a la perfección con tu vida diaria.</p></li>
+        </ul>  
+      <img src="./resources/indexclock.webp" alt="reloj" height="500" width="1000" style="display: block; margin-left: auto; margin-right: auto;">
+      </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="js/scripts.js"></script>
+
+
+      <script>
+          $(window).scroll(function() {
+              if ($(document).scrollTop() > 50) {
+                  $('.nav').addClass('affix');
+                  console.log("OK");
+              } else {
+                  $('.nav').removeClass('affix');
+              }
+          });
+      </script>
+  </body>
+</html>
